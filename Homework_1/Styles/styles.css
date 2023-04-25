@@ -1,0 +1,402 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #ffffff;
+    padding: 15px 70px;
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+.logo img {
+    max-height: 50px;
+}
+.logo img:not(:last-child){
+    margin-right: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.nav-links a:not(:last-child){
+    margin-right: 20px;
+}
+.burger-menu{
+    font-size: 72px;
+    cursor: pointer;
+    display: none;
+}
+.contact-button {
+    width: 173px;
+    height: 50px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.main{
+    background-color: #EBEBEB;
+    padding-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1600px;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-self: center;
+    align-self: center;
+}
+.h2{
+    padding-top: 140px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#our-service{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+    padding-bottom: 40px;
+}
+#our-specialisation{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #333333;
+}
+.img-container label{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.img-container button{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+.img-container .picture-1, .img-container .picture-2, .img-container .picture-3, .img-container .picture-4, .img-container .picture-5, .img-container .picture-6{
+    position: relative;
+}
+.img-container button{
+    position: absolute;
+    left: 45px;
+    bottom: 40px;
+}
+.img-container label{
+    position: absolute;
+    left: 45px;
+    top: 40px;
+} 
+.img-container .picture-1:hover img,
+.img-container .picture-2:hover img,
+.img-container .picture-3:hover img,
+.img-container .picture-4:hover img,
+.img-container .picture-5:hover img,
+.img-container .picture-6:hover img {
+    content: url("/Media/skyscreaper-blue.png");
+}
+.about-us{
+    padding-top: 140px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    
+}
+.usText{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: last baseline;
+    padding-right: 125px;
+}
+.usText h2{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+    width: 155px;
+    height: 23px;
+}
+.usText p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    width: 445px;
+    height: 245px;
+    text-align: none;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-self: start;
+    align-content: center;
+}
+.card-container .card-1, .card-container .card-2, .card-container .card-3, .card-container .card-4{
+    position: relative;
+}
+.card-container label{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    width: 107px;
+    height: 37px;
+    position: absolute;
+    left: 40px;
+    bottom: 104px;
+}
+.card-container .number-of-cases{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: 75px;
+    height: 54px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.card-container button{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    color: #005FA3;
+    border: 2px solid #005FA3;
+    border-radius: 25px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    left: 30px;
+    bottom: 23px;
+}
+.card-container a{
+    display: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #005FA3;
+}
+.card-container > div:hover img{
+    content: url("/Media/cube-blue.png");
+}
+.card-container > div:hover label{
+    color: white;
+}
+.card-container > div:hover button{
+    color: white;
+    border: 2px solid white;
+}
+
+
+@media screen and (max-width: 800px) {
+    .contact-button{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+    nav .burger-menu{
+        display: block;
+    }
+    .main .h2 #our-service{
+        display: none;
+    }
+    .img-container button{
+        display: none;
+    }
+    .usText h2{
+        display: none;
+    }
+    .card-container button{
+        display: none;
+    }
+    .card-container a{
+        display: block;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .main{
+        display: grid;
+        justify-content: center;
+    }
+    .img-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        justify-self: center;
+        align-self: center;
+    }
+    .img-container img{
+        height: 360px;
+        width: 618px;
+        cursor: pointer;
+    }
+    .img-container .picture-1, .img-container .picture-2, .img-container .picture-3, .img-container .picture-4, .img-container .picture-5, .img-container .picture-6{
+        position: relative;
+    }
+    .img-container label{
+        position: absolute;
+        bottom: 45px;
+        left: 79px;
+    }
+    .img-container .picture-1:hover img,
+    .img-container .picture-2:hover img,
+    .img-container .picture-3:hover img,
+    .img-container .picture-4:hover img,
+    .img-container .picture-5:hover img,
+    .img-container .picture-6:hover img {
+        content: url("/Media/skyscreaper-blue.png");
+        height: 360px;
+        width: 618px;
+        cursor: pointer;
+    }
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .usText{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        margin-right: 50px;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-1 img, .card-2 img, .card-3 img, .card-4 img{
+        height: 120px;
+        width: 631px;
+    }
+    .card-container .card-1, .card-container .card-2, .card-container .card-3, .card-container .card-4{
+        position: relative;
+    }
+    .card-container label{
+        position: absolute;
+        left: 262px;
+        bottom: 34px;
+    }
+    .card-container .number-of-cases {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+    }
+    .card-container a{
+        position: absolute;
+        right: 47px;
+        bottom: 48px;
+    }
+    .card-container > div:hover img{
+        content: url("/Media/cube-blue.png");
+        height: 120px;
+        width: 631px;
+    }
+    .card-container > div:hover label{
+        color: white;
+    }
+    .card-container > div:hover a{
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
