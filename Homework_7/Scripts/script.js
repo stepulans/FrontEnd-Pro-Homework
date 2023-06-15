@@ -31,6 +31,7 @@ function render(products) {
     document.body.append(div_wrapper);
 }
 function rating(n) {
+    const roundedRating = Math.round(n);
     const ratingContainer = document.createElement('span');
     ratingContainer.className = 'rating-container';
   
