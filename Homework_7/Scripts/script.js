@@ -5,7 +5,6 @@ fetch(url)
     .then(res => res.json())
     .then(data => {
         render(data.products)
-        console.log(data);
     })
 
 function render(products) {
@@ -40,6 +39,5 @@ function rating(n) {
       starIcon.className = `fa fa-star${i <= n ? ' active' : ''}`;
       ratingContainer.appendChild(starIcon);
     }
-  
     return ratingContainer;
   }
