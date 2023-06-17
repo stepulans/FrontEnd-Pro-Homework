@@ -37,7 +37,7 @@ function rating(n) {
   
     for (let i = 1; i <= 5; i++) {
       const starIcon = document.createElement('i');
-      starIcon.className = `fa fa-star${i <= n ? ' active' : ''}`;
+      starIcon.className = `fa fa-star${i <= roundedRating ? ' active' : ''}`;
       ratingContainer.appendChild(starIcon);
     }
     return ratingContainer;
